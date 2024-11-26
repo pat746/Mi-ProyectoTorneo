@@ -1,0 +1,113 @@
+/* Estilos para la tabla de posiciones */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor del filtro */
+div {
+    margin-bottom: 20px;
+}
+
+/* Filtro de selección de torneo */
+label {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+
+select, button {
+    padding: 8px 12px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+select:focus, button:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Tabla de posiciones */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+td:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Mensaje de error cuando no hay datos */
+td[colspan="10"] {
+    font-size: 16px;
+    color: #888;
+}
+
+td[colspan="10"]:hover {
+    background-color: transparent;
+}
+
+/* Estilos para un botón de agregar si se descomenta */
+.btn-add {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-add:hover {
+    background-color: #218838;
+}

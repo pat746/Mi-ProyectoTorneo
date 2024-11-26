@@ -1,0 +1,20 @@
+{
+    "name": "max/campeonato",
+    "description": "Un proyecto para gestionar un campeonato.",
+    "autoload": {
+        "psr-4": {
+            "Max\\Campeonato\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Max Rojas",
+            "email": "jmaxrh@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "spipu/html2pdf": "^5.2",
+        "tecnickcom/tcpdf": "^6.4"
+    }
+}

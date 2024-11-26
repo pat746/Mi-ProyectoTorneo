@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 200vh; /* Asegúrate de que haya suficiente contenido para desplazar */
+    background-color: #f0f0f0;
+}
+
+#ball-container {
+    position: fixed; /* Mantener el balón fijo en la pantalla */
+    top: 0;
+    left: 0;
+    transition: transform 0.1s ease, opacity 0.1s ease; /* Suavizar transformaciones */
+    pointer-events: none; /* No interfiere con el desplazamiento */
+}
+
+#ball {
+    width: 50px; /* Tamaño inicial del balón */
+    height: 50px;
+    background-image: url('balon.webp'); /* Reemplazar el color por la imagen */
+    background-size: cover; /* Asegura que la imagen cubra el área del balón */
+    border-radius: 50%; /* Hacer el balón redondo */
+    position: absolute; /* Para posicionar el balón dentro del contenedor */
+    transform: translate(-50%, -50%); /* Centrar el balón */
+}
+
+#content {
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex; /* Usamos Flexbox para el layout */
+    height: 100vh; /* Ajustamos la altura al 100% de la ventana */
+}
+
+.sidebar {
+    background-color: #333; /* Color de fondo para el menú */
+    color: white;
+    padding: 15px;
+    width: 200px; /* Ancho fijo para el menú */
+    height: 100%; /* Altura del menú igual a la altura de la ventana */
+    position: fixed; /* Fijamos la posición del menú */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Sin puntos de lista */
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px;
+    display: block; /* Hace que el área clickeable ocupe todo el ancho */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.sidebar a:hover {
+    background-color: #575757; /* Color al pasar el mouse */
+}
+
+.content-area {
+    margin-left: 200px; /* Deja espacio para el menú */
+    padding: 20px;
+    flex-grow: 1; /* Ocupa el resto del espacio */
+}
+
+.header {
+    background-color: #4CAF50; /* Color de fondo para la barra de título */
+    color: white;
+    padding: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #fff; /* Color de fondo para el contenido principal */
+}

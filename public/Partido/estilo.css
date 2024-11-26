@@ -1,0 +1,234 @@
+/* Estilos para el fixture */
+.fixture-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.partido {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.info {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.hora {
+    font-weight: bold;
+    color: #333;
+}
+
+.torneo {
+    font-weight: bold;
+    color: #2d87f0;
+}
+
+.equipos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.equipo {
+    font-weight: bold;
+    color: #333;
+}
+
+.resultado {
+    color: #333;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.detalles {
+    font-size: 14px;
+    color: #777;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.arbitro {
+    font-weight: bold;
+}
+
+.estadio {
+    font-style: italic;
+}
+
+.acciones {
+    text-align: right;
+}
+
+.btn-view, .btn-edit, .btn-delete {
+    padding: 5px 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn-view {
+    background-color: #28a745;
+}
+
+
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Ocultamos el modal por defecto */
+    position: fixed;
+    z-index: 1; /* Se asegura de que el modal esté sobre el contenido */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semitransparente */
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Tamaño del modal */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form input[type="number"] {
+    width: 100px;
+    text-align: center;
+}
+
+
+
+/* Estilos para los botones en la página */
+.btn-add-result {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-add-result:hover {
+    background-color: #45a049;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.content {
+    padding: 20px;
+}
+
+.fixture-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.partido {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info,
+.equipos,
+.detalles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.info .fecha,
+.equipos .equipo,
+.detalles .arbitro,
+.detalles .estadio {
+    font-weight: bold;
+}
+
+.equipos .resultado {
+    font-size: 18px;
+    font-weight: normal;
+}
